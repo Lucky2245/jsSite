@@ -4,8 +4,13 @@
     <script src="js/search.js"></script>
   </head>
   <body>
-    <h1 id="searchResults"></h1>
     <script>
-      var search = window.location.hash
-      var h1 = document.getElementById("searchResults").innerText = search;
+      if(window.location.href == "https://lucky2245.github.io/jsSite/search?s=index.html"){
+        var link = document.createElement("a")
+        link.href ="index.html";
+        link.innerText = "index.html";
+        document.body.appendChild(link);
+      }
     </script>
+  </body>
+</html>
