@@ -4,12 +4,15 @@
     <script src="js/search.js"></script>
   </head>
   <body>
+    <h1 id="searchResult"></script>
     <p><a id=""></a></p>
     <script>
       var link =document.getElementById("a");
       var search = document.getElementById("search").value;
       link.href = search;
       link.innerText = search;
+      var searchResult = document.getElementById("searchResult");
+      searchResult.value = "search results for " + search;
     </script>
     <style>
       p{
