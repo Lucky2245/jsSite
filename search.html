@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="js/search.js"></script>
+  </head>
+  <body>
+    <h1 id="searchResults"></h1>
+    <script>
+      var search = window.location.hash
+      var h1 = document.getElementById("searchResults").innerText = search;
+    </script>
