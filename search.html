@@ -11,6 +11,8 @@
       var searchResults = document.createElement("h1");
       link.innerText = searchResults.innerText;
       searchResults.innerText = window.location.href;
+      document.body.appendChild(link);
+      document.body.appendChild(searchResults);
     </script>
     <style>
       p{
