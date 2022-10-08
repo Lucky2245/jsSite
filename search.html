@@ -7,12 +7,10 @@
     <h1 id="searchResult">Search for any pages on this website</h1>
     <p><a id=""></a></p>
     <script>
-      var link = document.getElementById("a");
-      var search = document.getElementById("search").value;
-      link.href = search;
-      link.innerText = search;
-      var searchResult = document.getElementById("searchResult");
-      searchResult.innerText = "Search results for " + search;
+      var link = document.createElement("a");
+      var searchResults = document.createElement("h1");
+      link.innerText = searchResults.innerText;
+      searchResults.innerText = window.location.href;
     </script>
     <style>
       p{
