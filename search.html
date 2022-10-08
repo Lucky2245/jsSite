@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1 id="searchResult">Search for any pages on this website</h1>
-    <p><a id=""></a></p>
+    <p><a id="link"></a></p>
     <style>
       p{
         text-align:center;
@@ -17,9 +17,9 @@
     <script>
       var link = document.getElementById("link");
       var location = window.location.href;
-      location.split("https://lucky2245.github.io/jsSite/search?s=")
-      link.href = window.location.href;
-      link.href = window.location.hash;
+      location.split("https://lucky2245.github.io/jsSite/search?s=");
+      link.href = location;
+      link.innerText = location;
     </script>
   </body>
 </html>
