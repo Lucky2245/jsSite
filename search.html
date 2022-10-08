@@ -16,8 +16,7 @@
     </style>
     <script>
       var link = document.getElementById("link");
-      var location = window.location.href;
-      location.split("https://lucky2245.github.io/jsSite/search?s=");
+      var location = document.getElementById("search").value
       link.href = location;
       link.innerText = location;
     </script>
