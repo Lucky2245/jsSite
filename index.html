@@ -20,8 +20,8 @@
     <div id="cookiePolicy" class="cookiePolicy">
       <span class="close" onclick="document.getElementById('cookiePolicy').style.display ='none';">X</span>
       <h1>This website uses cookies to save search data</1>
-      <p><a href="#accept">I accept</a></p>
-      <p><a href="#refuse">I Deny</a></p>
+      <p><a href="javascript:accept()">I accept</a></p>
+      <p><a href="javascript:deny()">I Deny</a></p>
     </div>
     <style>
       .cookiePolicy{
@@ -41,5 +41,21 @@
              color:white;
       }
     </style>
+    <script>
+      function accept(){
+        document.getElementById("cookiePolicy").style.display = "none";
+        localStorage.setItem("accept");
+      }
+      function deny(){
+         document.getElementById("cookiePolicy").style.display = "none";
+         localStorage.setItem("deny");
+      }  
+      if(localStorage.getItem("accept")){
+         document.getElementById("cookiePolicy").style.display = "none";
+      }
+      if(localStorage.getItem("deny")){
+       document.getElementById("cookiePolicy").style.display = "none";
+      }
+</script>
   </body>
 </html>
